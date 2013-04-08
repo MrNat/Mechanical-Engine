@@ -6,15 +6,15 @@
 //  Copyright (c) 2013 Bipolaron. All rights reserved.
 //
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <stdbool.h>
-
-#include "GLLibraries.h"
+#include "MechanicalCore.h"
 
 static bool engineInitialized = false;
 static bool engineWindowOpened = false;
 static bool engineInMainLoop = false;
+
+static vector<State *> states;
+
+#pragma mark -
 
 void engineInit(void)
 {
@@ -38,6 +38,21 @@ void engineInit(void)
 		
 		printf("done.\n");
 	}
+}
+
+
+void engineTerminate(void)
+{
+	printf("Exiting...");
+	
+	while (!states.empty())
+	{
+		states.back()->destroy();
+		states.pop_back();
+	}
+	
+	glfwTerminate();
+	exit(EXIT_SUCCESS);
 }
 
 void engineOpenWindow(int windowWidth, int windowHeight, const char * title)
@@ -91,16 +106,64 @@ void engineMainLoop(void)
 	}
 	else
 	{
-		printf("Entering main loop...");
+		printf("Entering main loop...\n");
 		engineInMainLoop = true;
 		
 		bool running = true;
 		while (running)
 		{
+			if (!states.empty())
+			{
+				states.back()->update();
+				states.back()->render();
+			}
+			
 			glfwSwapBuffers();
 			running = !glfwGetKey(GLFW_KEY_ESC) && glfwGetWindowParam(GLFW_OPENED);
 		}
+		
+		engineTerminate();
 	}
 }
 
+#pragma mark -
+#pragma mark State Handling
 
+void engineChangeState(State * newState)
+{
+	// Straight-up change scene immediately //
+	if (!states.empty())
+	{
+		states.back()->destroy();
+		states.pop_back();
+	}
+	
+	states.push_back(newState);
+	states.back()->init();
+}
+
+void enginePushState(State * newState)
+{
+	// Add the list, don't remove previous scene //
+	if (!states.empty())
+		states.back()->pause();
+	
+	states.push_back(newState);
+	states.back()->init();
+}
+
+void enginePopState(State * newState)
+{
+	// Remove current state //
+	if (!states.empty())
+	{
+		states.back()->destroy();
+		states.pop_back();
+	}
+	
+	// Resume previous state //
+	if (!states.empty())
+	{
+		states.back()->resume();
+	}
+}
