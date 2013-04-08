@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Bipolaron. All rights reserved.
 //
 
-#include <iostream>
+#include "MechanicalCore.c"
 
 int main(int argc, const char * argv[])
 {
-
-	// insert code here...
-	std::cout << "Hello, World!\n";
-    return 0;
+	engineInit();
+	engineOpenWindow(640, 480);
+	
+	return 0;
 }
 

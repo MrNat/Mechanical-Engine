@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D6C0A76C17126D50005B3074 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6C0A76B17126D50005B3074 /* main.cpp */; };
 		D6C0A76E17126D50005B3074 /* Mechanical_Engine.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D6C0A76D17126D50005B3074 /* Mechanical_Engine.1 */; };
+		D6C0A77617126DC2005B3074 /* MechanicalCore.c in Sources */ = {isa = PBXBuildFile; fileRef = D6C0A77517126DC2005B3074 /* MechanicalCore.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		D6C0A76817126D4F005B3074 /* Mechanical Engine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mechanical Engine"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C0A76B17126D50005B3074 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D6C0A76D17126D50005B3074 /* Mechanical_Engine.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Mechanical_Engine.1; sourceTree = "<group>"; };
+		D6C0A77517126DC2005B3074 /* MechanicalCore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MechanicalCore.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +62,19 @@
 		D6C0A76A17126D4F005B3074 /* Mechanical Engine */ = {
 			isa = PBXGroup;
 			children = (
+				D6C0A77417126DB5005B3074 /* Engine v1.0 */,
 				D6C0A76B17126D50005B3074 /* main.cpp */,
 				D6C0A76D17126D50005B3074 /* Mechanical_Engine.1 */,
 			);
 			path = "Mechanical Engine";
+			sourceTree = "<group>";
+		};
+		D6C0A77417126DB5005B3074 /* Engine v1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0A77517126DC2005B3074 /* MechanicalCore.c */,
+			);
+			name = "Engine v1.0";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6C0A76C17126D50005B3074 /* main.cpp in Sources */,
+				D6C0A77617126DC2005B3074 /* MechanicalCore.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
