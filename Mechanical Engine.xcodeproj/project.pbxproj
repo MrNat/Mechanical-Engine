@@ -10,6 +10,11 @@
 		D6C0A76C17126D50005B3074 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6C0A76B17126D50005B3074 /* main.cpp */; };
 		D6C0A76E17126D50005B3074 /* Mechanical_Engine.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D6C0A76D17126D50005B3074 /* Mechanical_Engine.1 */; };
 		D6C0A77617126DC2005B3074 /* MechanicalCore.c in Sources */ = {isa = PBXBuildFile; fileRef = D6C0A77517126DC2005B3074 /* MechanicalCore.c */; };
+		D6C0A77B17126F98005B3074 /* libGLEW.1.9.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A77917126F98005B3074 /* libGLEW.1.9.0.dylib */; };
+		D6C0A77C17126F98005B3074 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A77A17126F98005B3074 /* libGLEW.a */; };
+		D6C0A77F17126FA4005B3074 /* libglfw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A77D17126FA4005B3074 /* libglfw.a */; };
+		D6C0A78017126FA4005B3074 /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A77E17126FA4005B3074 /* libglfw.dylib */; };
+		D6C0A7831712761F005B3074 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A7821712761F005B3074 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +35,12 @@
 		D6C0A76B17126D50005B3074 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D6C0A76D17126D50005B3074 /* Mechanical_Engine.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Mechanical_Engine.1; sourceTree = "<group>"; };
 		D6C0A77517126DC2005B3074 /* MechanicalCore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MechanicalCore.c; sourceTree = "<group>"; };
+		D6C0A77817126F7A005B3074 /* GLLibraries.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLLibraries.h; sourceTree = "<group>"; };
+		D6C0A77917126F98005B3074 /* libGLEW.1.9.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.9.0.dylib; path = "Mechanical Engine/libGLEW.1.9.0.dylib"; sourceTree = "<group>"; };
+		D6C0A77A17126F98005B3074 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = "Mechanical Engine/libGLEW.a"; sourceTree = "<group>"; };
+		D6C0A77D17126FA4005B3074 /* libglfw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw.a; path = "Mechanical Engine/libglfw.a"; sourceTree = "<group>"; };
+		D6C0A77E17126FA4005B3074 /* libglfw.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.dylib; path = "Mechanical Engine/libglfw.dylib"; sourceTree = "<group>"; };
+		D6C0A7821712761F005B3074 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +48,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C0A7831712761F005B3074 /* OpenGL.framework in Frameworks */,
+				D6C0A77B17126F98005B3074 /* libGLEW.1.9.0.dylib in Frameworks */,
+				D6C0A77C17126F98005B3074 /* libGLEW.a in Frameworks */,
+				D6C0A77F17126FA4005B3074 /* libglfw.a in Frameworks */,
+				D6C0A78017126FA4005B3074 /* libglfw.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				D6C0A76A17126D4F005B3074 /* Mechanical Engine */,
+				D6C0A78117126FB3005B3074 /* Frameworks */,
 				D6C0A76917126D4F005B3074 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,9 +89,30 @@
 		D6C0A77417126DB5005B3074 /* Engine v1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				D6C0A77717126F62005B3074 /* Headers */,
 				D6C0A77517126DC2005B3074 /* MechanicalCore.c */,
 			);
 			name = "Engine v1.0";
+			sourceTree = "<group>";
+		};
+		D6C0A77717126F62005B3074 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0A77817126F7A005B3074 /* GLLibraries.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		D6C0A78117126FB3005B3074 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0A77917126F98005B3074 /* libGLEW.1.9.0.dylib */,
+				D6C0A77A17126F98005B3074 /* libGLEW.a */,
+				D6C0A77E17126FA4005B3074 /* libglfw.dylib */,
+				D6C0A77D17126FA4005B3074 /* libglfw.a */,
+				D6C0A7821712761F005B3074 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +234,11 @@
 		D6C0A77217126D50005B3074 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "/usr/local/include/**";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Mechanical Engine\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -203,6 +246,11 @@
 		D6C0A77317126D50005B3074 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "/usr/local/include/**";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Mechanical Engine\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

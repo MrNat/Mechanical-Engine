@@ -11,7 +11,8 @@
 int main(int argc, const char * argv[])
 {
 	engineInit();
-	engineOpenWindow(640, 480);
+	engineOpenWindow(960, 540, "Mechanical Engine");
+	engineMainLoop();
 	
 	return 0;
 }
