@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6C0A7D61713B4AA005B3074 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A7D51713B4AA005B3074 /* Cocoa.framework */; };
+		D6C0A7E01713B4AA005B3074 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6C0A7DE1713B4AA005B3074 /* InfoPlist.strings */; };
+		D6C0A7E21713B4AA005B3074 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0A7E11713B4AA005B3074 /* main.m */; };
+		D6C0A7E61713B4AA005B3074 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D6C0A7E41713B4AA005B3074 /* Credits.rtf */; };
+		D6C0A7E91713B4AA005B3074 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0A7E81713B4AA005B3074 /* AppDelegate.m */; };
+		D6C0A7EC1713B4AA005B3074 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C0A7EA1713B4AA005B3074 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D6C0A7D21713B4AA005B3074 /* Mechanical Engine App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mechanical Engine App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6C0A7D51713B4AA005B3074 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D6C0A7D81713B4AA005B3074 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D6C0A7D91713B4AA005B3074 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D6C0A7DA1713B4AA005B3074 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D6C0A7DD1713B4AA005B3074 /* Mechanical Engine App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mechanical Engine App-Info.plist"; sourceTree = "<group>"; };
+		D6C0A7DF1713B4AA005B3074 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D6C0A7E11713B4AA005B3074 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6C0A7E31713B4AA005B3074 /* Mechanical Engine App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mechanical Engine App-Prefix.pch"; sourceTree = "<group>"; };
+		D6C0A7E51713B4AA005B3074 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D6C0A7E71713B4AA005B3074 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D6C0A7E81713B4AA005B3074 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D6C0A7EB1713B4AA005B3074 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6C0A7CF1713B4AA005B3074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C0A7D61713B4AA005B3074 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6C0A7C91713B4AA005B3074 = {
+			isa = PBXGroup;
+			children = (
+				D6C0A7DB1713B4AA005B3074 /* Mechanical Engine App */,
+				D6C0A7D41713B4AA005B3074 /* Frameworks */,
+				D6C0A7D31713B4AA005B3074 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6C0A7D31713B4AA005B3074 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0A7D21713B4AA005B3074 /* Mechanical Engine App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6C0A7D41713B4AA005B3074 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0A7D51713B4AA005B3074 /* Cocoa.framework */,
+				D6C0A7D71713B4AA005B3074 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6C0A7D71713B4AA005B3074 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0A7D81713B4AA005B3074 /* AppKit.framework */,
+				D6C0A7D91713B4AA005B3074 /* CoreData.framework */,
+				D6C0A7DA1713B4AA005B3074 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D6C0A7DB1713B4AA005B3074 /* Mechanical Engine App */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0A7E71713B4AA005B3074 /* AppDelegate.h */,
+				D6C0A7E81713B4AA005B3074 /* AppDelegate.m */,
+				D6C0A7EA1713B4AA005B3074 /* MainMenu.xib */,
+				D6C0A7DC1713B4AA005B3074 /* Supporting Files */,
+			);
+			path = "Mechanical Engine App";
+			sourceTree = "<group>";
+		};
+		D6C0A7DC1713B4AA005B3074 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0A7DD1713B4AA005B3074 /* Mechanical Engine App-Info.plist */,
+				D6C0A7DE1713B4AA005B3074 /* InfoPlist.strings */,
+				D6C0A7E11713B4AA005B3074 /* main.m */,
+				D6C0A7E31713B4AA005B3074 /* Mechanical Engine App-Prefix.pch */,
+				D6C0A7E41713B4AA005B3074 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6C0A7D11713B4AA005B3074 /* Mechanical Engine App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6C0A7EF1713B4AA005B3074 /* Build configuration list for PBXNativeTarget "Mechanical Engine App" */;
+			buildPhases = (
+				D6C0A7CE1713B4AA005B3074 /* Sources */,
+				D6C0A7CF1713B4AA005B3074 /* Frameworks */,
+				D6C0A7D01713B4AA005B3074 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mechanical Engine App";
+			productName = "Mechanical Engine App";
+			productReference = D6C0A7D21713B4AA005B3074 /* Mechanical Engine App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6C0A7CA1713B4AA005B3074 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Bipolaron;
+			};
+			buildConfigurationList = D6C0A7CD1713B4AA005B3074 /* Build configuration list for PBXProject "Mechanical Engine App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D6C0A7C91713B4AA005B3074;
+			productRefGroup = D6C0A7D31713B4AA005B3074 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6C0A7D11713B4AA005B3074 /* Mechanical Engine App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6C0A7D01713B4AA005B3074 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C0A7E01713B4AA005B3074 /* InfoPlist.strings in Resources */,
+				D6C0A7E61713B4AA005B3074 /* Credits.rtf in Resources */,
+				D6C0A7EC1713B4AA005B3074 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6C0A7CE1713B4AA005B3074 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C0A7E21713B4AA005B3074 /* main.m in Sources */,
+				D6C0A7E91713B4AA005B3074 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D6C0A7DE1713B4AA005B3074 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6C0A7DF1713B4AA005B3074 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D6C0A7E41713B4AA005B3074 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6C0A7E51713B4AA005B3074 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D6C0A7EA1713B4AA005B3074 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6C0A7EB1713B4AA005B3074 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6C0A7ED1713B4AA005B3074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D6C0A7EE1713B4AA005B3074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D6C0A7F01713B4AA005B3074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mechanical Engine App/Mechanical Engine App-Prefix.pch";
+				INFOPLIST_FILE = "Mechanical Engine App/Mechanical Engine App-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D6C0A7F11713B4AA005B3074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mechanical Engine App/Mechanical Engine App-Prefix.pch";
+				INFOPLIST_FILE = "Mechanical Engine App/Mechanical Engine App-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6C0A7CD1713B4AA005B3074 /* Build configuration list for PBXProject "Mechanical Engine App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6C0A7ED1713B4AA005B3074 /* Debug */,
+				D6C0A7EE1713B4AA005B3074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6C0A7EF1713B4AA005B3074 /* Build configuration list for PBXNativeTarget "Mechanical Engine App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6C0A7F01713B4AA005B3074 /* Debug */,
+				D6C0A7F11713B4AA005B3074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6C0A7CA1713B4AA005B3074 /* Project object */;
+}
