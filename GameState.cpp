@@ -46,7 +46,7 @@ void GameState::init(void)
 	"	Color = color;"
 	"	gl_Position = vec4( position, 0.0, 1.0 );"
 	"}";
-	
+	/*
 	const char* fragmentSource =
 	"#version 150\n"
 	"in vec3 Color;"
@@ -54,7 +54,7 @@ void GameState::init(void)
 	"void main() {"
 	"	outColor = vec4( 1.0, 1.0, 1.0, 1.0 );"
 	"}";
-	
+	*/
 	
 	GLuint vao;
 	glGenVertexArrays( 1, &vao );
@@ -78,7 +78,7 @@ void GameState::init(void)
 	glCompileShader(vertexShader);
 	
 	GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-	//const char * fragmentSource = engineLoadFile("shaders/StandardShader.frag");
+	const char * fragmentSource = engineLoadFile("StandardShader.frag");
 	glShaderSource(fragmentShader, 1, &fragmentSource, NULL);
 	glCompileShader(fragmentShader);
 	

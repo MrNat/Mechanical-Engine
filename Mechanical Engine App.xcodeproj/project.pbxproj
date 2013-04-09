@@ -12,13 +12,27 @@
 		D6C0A7E21713B4AA005B3074 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6C0A7E11713B4AA005B3074 /* main.mm */; };
 		D6C0A7E61713B4AA005B3074 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D6C0A7E41713B4AA005B3074 /* Credits.rtf */; };
 		D6C0A7F31713B4D0005B3074 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A7F21713B4D0005B3074 /* OpenGL.framework */; };
-		D6C0A8011713B56F005B3074 /* libGLEW.1.9.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A7FD1713B56F005B3074 /* libGLEW.1.9.0.dylib */; };
-		D6C0A8021713B56F005B3074 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A7FE1713B56F005B3074 /* libGLEW.a */; };
-		D6C0A8031713B56F005B3074 /* libglfw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A7FF1713B56F005B3074 /* libglfw.a */; };
-		D6C0A8041713B56F005B3074 /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A8001713B56F005B3074 /* libglfw.dylib */; };
-		D6C0A80C1713B65A005B3074 /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6C0A8061713B65A005B3074 /* GameState.cpp */; };
-		D6C0A80D1713B65A005B3074 /* MechanicalCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6C0A8091713B65A005B3074 /* MechanicalCore.cpp */; };
+		D6C0A81C1713B9DD005B3074 /* libGLEW.1.9.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A8181713B9DD005B3074 /* libGLEW.1.9.0.dylib */; };
+		D6C0A81D1713B9DE005B3074 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A8191713B9DD005B3074 /* libGLEW.a */; };
+		D6C0A81E1713B9DE005B3074 /* libglfw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A81A1713B9DD005B3074 /* libglfw.a */; };
+		D6C0A81F1713B9DE005B3074 /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A81B1713B9DD005B3074 /* libglfw.dylib */; };
+		D6C0A8271713BA73005B3074 /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6C0A8211713BA73005B3074 /* GameState.cpp */; };
+		D6C0A8281713BA73005B3074 /* MechanicalCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6C0A8241713BA73005B3074 /* MechanicalCore.cpp */; };
+		D6C0A82D1713BAFB005B3074 /* StandardShader.frag in Resources */ = {isa = PBXBuildFile; fileRef = D6C0A8291713BA99005B3074 /* StandardShader.frag */; };
+		D6C0A82E1713BAFB005B3074 /* StandardShader.vert in Resources */ = {isa = PBXBuildFile; fileRef = D6C0A82A1713BA99005B3074 /* StandardShader.vert */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D6C0A8301713C12A005B3074 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D6C0A7D21713B4AA005B3074 /* Mechanical Engine App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mechanical Engine App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,20 +43,22 @@
 		D6C0A7DD1713B4AA005B3074 /* Mechanical Engine App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mechanical Engine App-Info.plist"; sourceTree = "<group>"; };
 		D6C0A7DF1713B4AA005B3074 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D6C0A7E11713B4AA005B3074 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
-		D6C0A7E31713B4AA005B3074 /* Mechanical Engine App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mechanical Engine App-Prefix.pch"; sourceTree = "<group>"; };
 		D6C0A7E51713B4AA005B3074 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		D6C0A7F21713B4D0005B3074 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		D6C0A7FD1713B56F005B3074 /* libGLEW.1.9.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.1.9.0.dylib; sourceTree = "<group>"; };
-		D6C0A7FE1713B56F005B3074 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLEW.a; sourceTree = "<group>"; };
-		D6C0A7FF1713B56F005B3074 /* libglfw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libglfw.a; sourceTree = "<group>"; };
-		D6C0A8001713B56F005B3074 /* libglfw.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw.dylib; sourceTree = "<group>"; };
-		D6C0A8051713B65A005B3074 /* EngineMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngineMacros.h; sourceTree = "<group>"; };
-		D6C0A8061713B65A005B3074 /* GameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
-		D6C0A8071713B65A005B3074 /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
-		D6C0A8081713B65A005B3074 /* GLLibraries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLibraries.h; sourceTree = "<group>"; };
-		D6C0A8091713B65A005B3074 /* MechanicalCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MechanicalCore.cpp; sourceTree = "<group>"; };
-		D6C0A80A1713B65A005B3074 /* MechanicalCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MechanicalCore.h; sourceTree = "<group>"; };
-		D6C0A80B1713B65A005B3074 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		D6C0A8101713B962005B3074 /* Mechanical Engine App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mechanical Engine App-Prefix.pch"; sourceTree = "<group>"; };
+		D6C0A8181713B9DD005B3074 /* libGLEW.1.9.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.9.0.dylib; path = "Mechanical Engine App/libGLEW.1.9.0.dylib"; sourceTree = "<group>"; };
+		D6C0A8191713B9DD005B3074 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = "Mechanical Engine App/libGLEW.a"; sourceTree = "<group>"; };
+		D6C0A81A1713B9DD005B3074 /* libglfw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw.a; path = "Mechanical Engine App/libglfw.a"; sourceTree = "<group>"; };
+		D6C0A81B1713B9DD005B3074 /* libglfw.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.dylib; path = "Mechanical Engine App/libglfw.dylib"; sourceTree = "<group>"; };
+		D6C0A8201713BA73005B3074 /* EngineMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngineMacros.h; sourceTree = "<group>"; };
+		D6C0A8211713BA73005B3074 /* GameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameState.cpp; path = ../GameState.cpp; sourceTree = "<group>"; };
+		D6C0A8221713BA73005B3074 /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameState.h; path = ../GameState.h; sourceTree = "<group>"; };
+		D6C0A8231713BA73005B3074 /* GLLibraries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLibraries.h; sourceTree = "<group>"; };
+		D6C0A8241713BA73005B3074 /* MechanicalCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MechanicalCore.cpp; path = ../MechanicalCore.cpp; sourceTree = "<group>"; };
+		D6C0A8251713BA73005B3074 /* MechanicalCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MechanicalCore.h; path = ../MechanicalCore.h; sourceTree = "<group>"; };
+		D6C0A8261713BA73005B3074 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = State.h; path = ../State.h; sourceTree = "<group>"; };
+		D6C0A8291713BA99005B3074 /* StandardShader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = StandardShader.frag; path = ../StandardShader.frag; sourceTree = "<group>"; };
+		D6C0A82A1713BA99005B3074 /* StandardShader.vert */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = StandardShader.vert; path = ../StandardShader.vert; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +68,10 @@
 			files = (
 				D6C0A7F31713B4D0005B3074 /* OpenGL.framework in Frameworks */,
 				D6C0A7D61713B4AA005B3074 /* Cocoa.framework in Frameworks */,
-				D6C0A8011713B56F005B3074 /* libGLEW.1.9.0.dylib in Frameworks */,
-				D6C0A8021713B56F005B3074 /* libGLEW.a in Frameworks */,
-				D6C0A8031713B56F005B3074 /* libglfw.a in Frameworks */,
-				D6C0A8041713B56F005B3074 /* libglfw.dylib in Frameworks */,
+				D6C0A81C1713B9DD005B3074 /* libGLEW.1.9.0.dylib in Frameworks */,
+				D6C0A81D1713B9DE005B3074 /* libGLEW.a in Frameworks */,
+				D6C0A81E1713B9DE005B3074 /* libglfw.a in Frameworks */,
+				D6C0A81F1713B9DE005B3074 /* libglfw.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				D6C0A7DB1713B4AA005B3074 /* Mechanical Engine App */,
+				D6C0A7DC1713B4AA005B3074 /* Supporting Files */,
 				D6C0A7D41713B4AA005B3074 /* Frameworks */,
 				D6C0A7D31713B4AA005B3074 /* Products */,
 			);
@@ -82,10 +99,10 @@
 		D6C0A7D41713B4AA005B3074 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D6C0A7FD1713B56F005B3074 /* libGLEW.1.9.0.dylib */,
-				D6C0A7FE1713B56F005B3074 /* libGLEW.a */,
-				D6C0A7FF1713B56F005B3074 /* libglfw.a */,
-				D6C0A8001713B56F005B3074 /* libglfw.dylib */,
+				D6C0A8181713B9DD005B3074 /* libGLEW.1.9.0.dylib */,
+				D6C0A8191713B9DD005B3074 /* libGLEW.a */,
+				D6C0A81A1713B9DD005B3074 /* libglfw.a */,
+				D6C0A81B1713B9DD005B3074 /* libglfw.dylib */,
 				D6C0A7F21713B4D0005B3074 /* OpenGL.framework */,
 				D6C0A7D51713B4AA005B3074 /* Cocoa.framework */,
 				D6C0A7D71713B4AA005B3074 /* Other Frameworks */,
@@ -107,7 +124,12 @@
 			isa = PBXGroup;
 			children = (
 				D6C0A7F41713B4E5005B3074 /* Engine */,
-				D6C0A7DC1713B4AA005B3074 /* Supporting Files */,
+				D6C0A8251713BA73005B3074 /* MechanicalCore.h */,
+				D6C0A8241713BA73005B3074 /* MechanicalCore.cpp */,
+				D6C0A8261713BA73005B3074 /* State.h */,
+				D6C0A80F1713B80B005B3074 /* States */,
+				D6C0A82F1713BFC7005B3074 /* Shaders */,
+				D6C0A7E11713B4AA005B3074 /* main.mm */,
 			);
 			path = "Mechanical Engine App";
 			sourceTree = "<group>";
@@ -115,28 +137,49 @@
 		D6C0A7DC1713B4AA005B3074 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D6C0A8101713B962005B3074 /* Mechanical Engine App-Prefix.pch */,
 				D6C0A7DD1713B4AA005B3074 /* Mechanical Engine App-Info.plist */,
 				D6C0A7DE1713B4AA005B3074 /* InfoPlist.strings */,
-				D6C0A7E11713B4AA005B3074 /* main.mm */,
-				D6C0A7E31713B4AA005B3074 /* Mechanical Engine App-Prefix.pch */,
 				D6C0A7E41713B4AA005B3074 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			path = "Mechanical Engine App";
 			sourceTree = "<group>";
 		};
 		D6C0A7F41713B4E5005B3074 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
-				D6C0A8051713B65A005B3074 /* EngineMacros.h */,
-				D6C0A8061713B65A005B3074 /* GameState.cpp */,
-				D6C0A8071713B65A005B3074 /* GameState.h */,
-				D6C0A8081713B65A005B3074 /* GLLibraries.h */,
-				D6C0A8091713B65A005B3074 /* MechanicalCore.cpp */,
-				D6C0A80A1713B65A005B3074 /* MechanicalCore.h */,
-				D6C0A80B1713B65A005B3074 /* State.h */,
+				D6C0A80E1713B7C4005B3074 /* Headers */,
 			);
 			name = Engine;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		D6C0A80E1713B7C4005B3074 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0A8231713BA73005B3074 /* GLLibraries.h */,
+				D6C0A8201713BA73005B3074 /* EngineMacros.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		D6C0A80F1713B80B005B3074 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0A82A1713BA99005B3074 /* StandardShader.vert */,
+				D6C0A8291713BA99005B3074 /* StandardShader.frag */,
+				D6C0A8211713BA73005B3074 /* GameState.cpp */,
+				D6C0A8221713BA73005B3074 /* GameState.h */,
+			);
+			name = States;
+			sourceTree = "<group>";
+		};
+		D6C0A82F1713BFC7005B3074 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +192,7 @@
 				D6C0A7CE1713B4AA005B3074 /* Sources */,
 				D6C0A7CF1713B4AA005B3074 /* Frameworks */,
 				D6C0A7D01713B4AA005B3074 /* Resources */,
+				D6C0A8301713C12A005B3074 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -190,6 +234,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C0A82D1713BAFB005B3074 /* StandardShader.frag in Resources */,
+				D6C0A82E1713BAFB005B3074 /* StandardShader.vert in Resources */,
 				D6C0A7E01713B4AA005B3074 /* InfoPlist.strings in Resources */,
 				D6C0A7E61713B4AA005B3074 /* Credits.rtf in Resources */,
 			);
@@ -203,8 +249,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6C0A7E21713B4AA005B3074 /* main.mm in Sources */,
-				D6C0A80C1713B65A005B3074 /* GameState.cpp in Sources */,
-				D6C0A80D1713B65A005B3074 /* MechanicalCore.cpp in Sources */,
+				D6C0A8271713BA73005B3074 /* GameState.cpp in Sources */,
+				D6C0A8281713BA73005B3074 /* MechanicalCore.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,13 +337,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Mechanical Engine App/Mechanical Engine App-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = "/usr/local/include/**";
 				INFOPLIST_FILE = "Mechanical Engine App/Mechanical Engine App-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Mechanical Engine App\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -308,13 +355,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Mechanical Engine App/Mechanical Engine App-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = "/usr/local/include/**";
 				INFOPLIST_FILE = "Mechanical Engine App/Mechanical Engine App-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Mechanical Engine App\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -340,6 +388,7 @@
 				D6C0A7F11713B4AA005B3074 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
