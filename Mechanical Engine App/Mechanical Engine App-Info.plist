@@ -27,8 +27,8 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2013 Bipolaron. All rights reserved.</string>
 	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
+	<string></string>
 	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
+	<string></string>
 </dict>
 </plist>
