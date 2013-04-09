@@ -31,6 +31,9 @@ private:
 	GameState();
 	~GameState();
 	
+	// Private testing //
+	//float vertices;
+	
 };
 
 #endif /* defined(__Mechanical_Engine__GameState__) */

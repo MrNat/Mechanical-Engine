@@ -16,15 +16,25 @@
 		D6C0A78017126FA4005B3074 /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A77E17126FA4005B3074 /* libglfw.dylib */; };
 		D6C0A7831712761F005B3074 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A7821712761F005B3074 /* OpenGL.framework */; };
 		D6C0A78F1713525F005B3074 /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6C0A78D1713525F005B3074 /* GameState.cpp */; };
+		D6C0A79717139F98005B3074 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A79617139F98005B3074 /* CoreFoundation.framework */; };
+		D6C0A79D1713A1AF005B3074 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C0A79C1713A1AF005B3074 /* Foundation.framework */; };
+		D6C0A7C31713A5FF005B3074 /* StandardShader.frag in Sources */ = {isa = PBXBuildFile; fileRef = D6C0A7C11713A5FF005B3074 /* StandardShader.frag */; };
+		D6C0A7C41713A5FF005B3074 /* StandardShader.vert in Sources */ = {isa = PBXBuildFile; fileRef = D6C0A7C21713A5FF005B3074 /* StandardShader.vert */; };
+		D6C0A7C51713A8CE005B3074 /* StandardShader.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = D6C0A7C11713A5FF005B3074 /* StandardShader.frag */; };
+		D6C0A7C61713A8CE005B3074 /* StandardShader.vert in CopyFiles */ = {isa = PBXBuildFile; fileRef = D6C0A7C21713A5FF005B3074 /* StandardShader.vert */; };
+		D6C0A7C71713A8D2005B3074 /* StandardShader.frag in Resources */ = {isa = PBXBuildFile; fileRef = D6C0A7C11713A5FF005B3074 /* StandardShader.frag */; };
+		D6C0A7C81713A8D2005B3074 /* StandardShader.vert in Resources */ = {isa = PBXBuildFile; fileRef = D6C0A7C21713A5FF005B3074 /* StandardShader.vert */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D6C0A76617126D4F005B3074 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 8;
+			dstPath = usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
+				D6C0A7C51713A8CE005B3074 /* StandardShader.frag in CopyFiles */,
+				D6C0A7C61713A8CE005B3074 /* StandardShader.vert in CopyFiles */,
 				D6C0A76E17126D50005B3074 /* Mechanical_Engine.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
@@ -47,6 +57,14 @@
 		D6C0A78B17128259005B3074 /* MechanicalCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MechanicalCore.h; sourceTree = "<group>"; };
 		D6C0A78D1713525F005B3074 /* GameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
 		D6C0A78E1713525F005B3074 /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
+		D6C0A79617139F98005B3074 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D6C0A79C1713A1AF005B3074 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D6C0A7A31713A270005B3074 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D6C0A7A61713A270005B3074 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D6C0A7A71713A270005B3074 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D6C0A7A81713A270005B3074 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D6C0A7C11713A5FF005B3074 /* StandardShader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = StandardShader.frag; path = shaders/StandardShader.frag; sourceTree = "<group>"; };
+		D6C0A7C21713A5FF005B3074 /* StandardShader.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = StandardShader.vert; path = shaders/StandardShader.vert; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C0A79D1713A1AF005B3074 /* Foundation.framework in Frameworks */,
+				D6C0A79717139F98005B3074 /* CoreFoundation.framework in Frameworks */,
 				D6C0A7831712761F005B3074 /* OpenGL.framework in Frameworks */,
 				D6C0A77B17126F98005B3074 /* libGLEW.1.9.0.dylib in Frameworks */,
 				D6C0A77C17126F98005B3074 /* libGLEW.a in Frameworks */,
@@ -87,6 +107,7 @@
 			children = (
 				D6C0A77417126DB5005B3074 /* Engine v1.0 */,
 				D6C0A78C17135249005B3074 /* States */,
+				D6C0A790171360A4005B3074 /* Shaders */,
 				D6C0A76B17126D50005B3074 /* main.cpp */,
 				D6C0A76D17126D50005B3074 /* Mechanical_Engine.1 */,
 			);
@@ -120,7 +141,11 @@
 				D6C0A77A17126F98005B3074 /* libGLEW.a */,
 				D6C0A77E17126FA4005B3074 /* libglfw.dylib */,
 				D6C0A77D17126FA4005B3074 /* libglfw.a */,
+				D6C0A79C1713A1AF005B3074 /* Foundation.framework */,
 				D6C0A7821712761F005B3074 /* OpenGL.framework */,
+				D6C0A79617139F98005B3074 /* CoreFoundation.framework */,
+				D6C0A7A31713A270005B3074 /* Cocoa.framework */,
+				D6C0A7A51713A270005B3074 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,6 +159,25 @@
 			name = States;
 			sourceTree = "<group>";
 		};
+		D6C0A790171360A4005B3074 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0A7C11713A5FF005B3074 /* StandardShader.frag */,
+				D6C0A7C21713A5FF005B3074 /* StandardShader.vert */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		D6C0A7A51713A270005B3074 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6C0A7A61713A270005B3074 /* AppKit.framework */,
+				D6C0A7A71713A270005B3074 /* CoreData.framework */,
+				D6C0A7A81713A270005B3074 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +188,7 @@
 				D6C0A76417126D4F005B3074 /* Sources */,
 				D6C0A76517126D4F005B3074 /* Frameworks */,
 				D6C0A76617126D4F005B3074 /* CopyFiles */,
+				D6C0A79517136122005B3074 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -180,6 +225,18 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		D6C0A79517136122005B3074 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C0A7C71713A8D2005B3074 /* StandardShader.frag in Resources */,
+				D6C0A7C81713A8D2005B3074 /* StandardShader.vert in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6C0A76417126D4F005B3074 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -188,6 +245,8 @@
 				D6C0A76C17126D50005B3074 /* main.cpp in Sources */,
 				D6C0A77617126DC2005B3074 /* MechanicalCore.cpp in Sources */,
 				D6C0A78F1713525F005B3074 /* GameState.cpp in Sources */,
+				D6C0A7C31713A5FF005B3074 /* StandardShader.frag in Sources */,
+				D6C0A7C41713A5FF005B3074 /* StandardShader.vert in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

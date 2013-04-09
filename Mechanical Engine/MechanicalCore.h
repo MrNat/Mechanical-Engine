@@ -13,6 +13,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+#include <fstream>
+
 #include "GLLibraries.h"
 #include "EngineMacros.h"
 
@@ -29,5 +31,8 @@ void engineChangeState(State * newState);
 void enginePushState(State * newState);
 void enginePopState(void);
 
+// Loading Files & Shaders //
+char * engineLoadFile(c_string fileName);
+GLuint engineLoadShader(c_string vertexFilePath, c_string fragmentFilePath);
 
 #endif

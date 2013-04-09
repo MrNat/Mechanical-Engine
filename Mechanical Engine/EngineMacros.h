@@ -11,7 +11,15 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
+#include <iostream>
 #include <vector>
+#include <math.h>
+
+#ifdef __APPLE__
+  #include "CoreFoundation/CoreFoundation.h"
+#endif
+
 
 // String Types //
 typedef const char * c_string;
@@ -20,5 +28,8 @@ typedef std::string string;
 // Vector //
 template <class T>
 using vector = std::vector<T>;
+
+// Shaders //
+typedef GLuint Shader;
 
 #endif
